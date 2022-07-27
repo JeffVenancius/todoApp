@@ -1,0 +1,112 @@
+body {
+    margin: 16px;
+    padding: 0;
+    background-color: olivedrab;
+}
+
+#todo__add {
+    margin-left: 50px;
+    display: flex;
+    justify-content: start;
+}
+
+textarea {
+    background-color: rgb(153, 190, 77);
+    border: 2px solid rgb(227, 255, 101);
+    border-radius: 8px;
+    color: rgb(34, 34, 34);
+}
+
+
+textarea:focus {
+    outline: 1px solid olive;
+}
+
+#todo__add button {
+    margin-top: auto;
+    margin-left: 16px;
+    width: 64px;
+    height: 22px;
+    background-color: olive;
+    /* border-color: olivedrab; */
+    border: 1px solid rgb(227, 255, 101);
+    border-radius: 8px;
+    color: rgb(49, 54, 25);
+}
+
+
+#todo__add button:active {
+    width: 60px;
+    height: 20px;
+    margin-left: 18px;
+}
+
+.sortBy {
+    display: flex;
+    justify-content: end;
+    /* text-align: end; */
+    align-items: center;
+    padding-right: 64px;
+    width: 90%;
+    line-height: 0;
+}
+
+.sortBy h3 {
+    margin-right: 16px;
+}
+
+.sortBy select {
+    height: 50%;
+}
+
+#lists {
+    display: grid;
+    grid-template-columns: auto auto;
+    /* justify-content: space-around; */
+}
+
+.todo__item {
+    display: flex;
+    justify-content: space-between;
+    background-color: olive;
+    border: 2px solid rgb(227, 255, 101);
+    border-radius: 8px;
+    margin-right: 64px;
+    margin-bottom: 16px;
+}
+.list {
+    padding: 0;
+    margin: 8px;
+}
+
+.todo__item button {
+    margin: auto;
+    margin-left: 64px;
+    margin-right: 16px;
+    width: 12px;
+    height: 12px;
+    background-color: red;
+    color: white;
+    border: 2px solid red;
+    border-radius: 11px;
+}
+
+.todo__item button:hover {
+    border: none;
+    background-color: rgb(205, 0, 0);
+}
+
+.todo__item div {
+    width: 100%;
+}
+
+.todo__item div h3 {
+    text-align: center;
+    margin: 0;
+    color: rgb(34, 34, 34)
+}
+.todo__item div p {
+   text-align: center; 
+   margin: 0;
+   color: rgb(51, 51, 51);
+}
